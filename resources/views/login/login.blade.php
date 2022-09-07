@@ -3,26 +3,44 @@
 @section('title', 'USIN')
 
 @section('content')
-    <form action="../app/Models/login.php<?php  ?>" method="post">
+@include('layouts.nav')
+
+<main>
+
+
+
+    <div class="container" id="login_div">
+    <div class="container">
+    <img  class="img img-responsive " src="{{asset('fundelec2.png')}}" id="login_imagen">
+        <p>
+            Ingrese sus credenciales
+        </p>
+        <hr>
+    <form action="login_valida" method="post">
         @csrf
-        <p class="p" style="font-weight:bold; text-shadow: 1px 1px 3px black; color: white; font-size:2.2rem">FUNDELEC</p>
-        <p class="p"style="font-weight:bold; text-shadow: 1px 1px 3px black; color: white; margin-top: -22px">Unidad de Seguridad Integral | USIN</p>
-        <hr>
-        <p style="color:white"> A continuación ingrese su nombre de usuario y su clave corporativa, presione acceder para ingresar al sistema</p>
-        <hr>
+        <p >Unidad de Seguridad Integral | USIN</p>
 
-        <div class="form-group">
-            <label class="label lead" for="usuario" style="font-weight:bold; text-shadow: 1px 1px 3px black; color: white">Operador</label>
-            <input class="form-control" type="text" id="usuario" name="usuario" required>
+        <div class="_6lux" id="login_input">
+            <input class="form-control" type="text" id="name" name="name" value="{{old('name')}}" placeholder="Usuario" required autofocus> @error('name') {{ $message }} @enderror
+        </div>
+
+        <div class="_6lux" id="login_input">
+            <input class="form-control" type="password" id="password" name="password" placeholder="Contraseña" required> @error('password') {{ $message }} @enderror
         </div>
 
         <div class="form-group">
-            <label class="label lead" for="clave" style="font-weight:bold; text-shadow: 1px 1px 3px black; color: white">Clave</label>
-            <input class="form-control" type="password" id="clave" name="clave" required>
+            <label>
+            <input type="checkbox" id="remember" name="remember" id="login_check">
+                Recuerdame
+            </label>
         </div>
         <hr>
-        <button class="btn btn-danger" type="submit" style="box-shadow: 1px 1px 3px black; font-size: 1.3rem">Acceder</button>
+        <button class="btn btn-danger" type="submit" id="login_boton" >Acceder</button>
 
 
     </form>
+    </div>
+        </div>
+    </main>
+
 @endsection

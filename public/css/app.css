@@ -1,0 +1,103 @@
+body{
+    background: #6695C4;
+}
+/* CSS para el login */
+#login_div{
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 100px;
+    color: #fff;
+    max-width: 21rem;
+    color: grey;
+}
+
+#login_boton{
+    background-color: #1e8a27;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 100px;
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+#login_imagen{
+    width: 0 auto;
+}
+
+#login_boton:hover{
+    background-color:  #34da1d    !important;
+
+    cursor: pointer;
+}
+
+#login_input{
+    padding: 10px;
+}
+
+#login_check{
+    color: blue;
+}
+
+#cabecera_texto{
+    text-align: center;
+}
+
+#row{
+    background: #fff;
+    border-radius: 15px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#input{
+    padding: 15px;
+
+}
+#interno_boton{
+    padding: 10px;
+
+}
+
+#boton_enviar{
+background-color:  #1e8a27    ;
+border: none;
+border-radius: 6px;
+font-size: 20px;
+line-height: 40px;
+color: white;
+}
+
+#boton_enviar:hover{
+    background-color:  #34da1d    !important;
+}
+
+/*menu lateral*/
+#barra{
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background: #069;
+}
+
+#barra a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: white;
+    font-size: 20px ;
+}
+
+/*datatables*/
+#card{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
